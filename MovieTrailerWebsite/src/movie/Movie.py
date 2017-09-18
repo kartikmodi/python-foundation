@@ -1,3 +1,8 @@
+import sys
+import os.path
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from html_code_gen_api import fresh_tomatoes
 '''
 Created on Sep 17, 2017
@@ -7,13 +12,13 @@ Created on Sep 17, 2017
 
 class Movie(object):
     '''
-    classdocs
+    Class to represent a movie.
     '''
 
 
     def __init__(self, title, poster_image_url, trailer_youtube_url):
         '''
-        Constructor
+        Calls when object is created. Sets attributes of the objects
         '''
         self.title = title 
         self.trailer_youtube_url = trailer_youtube_url
